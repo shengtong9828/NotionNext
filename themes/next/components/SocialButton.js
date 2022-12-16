@@ -70,15 +70,11 @@ const SocialButton = () => {
             <i className="fas fa-envelope transform hover:scale-125 duration-150" />
           </a>
         )}
-        <a
-          style={{ display: 'none' }}
-          target="_blank"
-          rel="noreferrer"
-          title={'RSS'}
-          href={'/feed'}
-        >
-          <i className="fas fa-rss transform hover:scale-125 duration-150" />
-        </a>
+        {false && (
+          <a target="_blank" rel="noreferrer" title={'RSS'} href={'/feed'}>
+            <i className="fas fa-rss transform hover:scale-125 duration-150" />
+          </a>
+        )}
       </div>
     </div>
   )
